@@ -49,6 +49,7 @@ const Users = () => {
     return (
             <>
                 <h1 className={renderPhraseStyle(users.length)}>{renderPhrase(users.length)}</h1>
+                {users.length > 0 &&
                 <table className="table">
                     <thead>
                         <tr>
@@ -65,7 +66,7 @@ const Users = () => {
                             renderUsers()
                         }
                     </tbody>
-                </table>
+                </table>}
             </>
     )
 }
